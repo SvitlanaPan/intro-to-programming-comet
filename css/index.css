@@ -1,0 +1,52 @@
+
+  @media screen and (min-width: 480px) {
+
+body {
+    background-color: #F6E7D2;
+    padding: 50px;
+}
+h2 {
+    font-weight: bold;
+    color: #01B6AD;
+    font-size: 175%;
+    font-weight: 250;
+    line-height: 2.3;
+  }
+
+  button {
+    background-color: rgb(255, 255, 177);
+    font-weight: 700;
+  }
+
+  .top-skill  {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 25px, 25px
+    background-color: #FFFFFF;
+    list-style-type: circle;
+  }
+  .hr li {
+   display: inline;
+   margin-right: 5px;
+   padding: 25px;
+  }
+
+  .massage {
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 10px #adacac;
+  }
+
+  #leave {
+      font-size: 15px;
+      color: #0A4958;
+      font-weight: 900;
+      line-height: 2.3;
+  }
+  footer{
+      background-color: #0A4958;
+      color: #FFFFFF;
+     
+
+  }
+}
