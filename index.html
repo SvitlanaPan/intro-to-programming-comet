@@ -1,38 +1,43 @@
 <!DOCTYPE html>
  <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Svitlana Pankiv CV</title>
+    <link rel="stylesheet" href="css/index.css">
   </head>
 
       <body>
         <div>
             <header>
                 <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">My way</a></li>
-                        <li><a href="#">Technical skills</a></li>
-                        <li><a href="#">contact</a></li>
+                    <ul class="hr">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#myWay">My way</a></li>
+                        <li><a href="#skills">Technical skills</a></li>
+                        <li><a href="#connect">Contact</a></li>
                     </ul>
                 </nav>
             </header>
         </div>
     <main>
-       <section>
+        <section id="home">
+
+        </section>
+       <section id="about">
          <h2>About</h2>
             <p>Hello I'm Svitlana Pankiv. I'm currently a student in Code the Dream School based in the US. My career goals are to become a web developer, create convenient, high-quality, and good-looking websites. I would like to work in environments such as HTML, CSS, JavaScript. My intention to have control to create, enhance and modify websites.</p>
         </section>
 
-        <section>
+        <section id="myWay">
             <h2>My way</h2>
             <p>My way to coding journey started unexpectedly when I went to the US. I need to choose a new field of study and some friends found for me some course JS syntax. I was so excited when I was able to write small code, that I decide to continue my studies in this area.Outside of work and studying I like to have time with my family, try some delicious food, also my passion is coffee and reading.</p>
         </section>    
     
         <section id="skills">
             <h2>Skills:</h2>
-            <ul>
-                <li>"JavaScript", "HTML", "CSS", "Git", "GItHub", "VS Code", "GitHub Descktop"</li>   
+            <ul class=top-skill>
             </ul>
         </section>
 
@@ -40,7 +45,7 @@
             <h2>Personal Projects:</h2>
         </section>
 
-        <section>
+        <section id="connect">
             <h2>Connect:</h2>
             <p><a href="mailto:lana141718@gmail.com?subject=Hi%20There!">Have any question please write</a></p>
             <p><a href="https://github.com/SvitlanaPan">My GitHub</a></p>
@@ -49,18 +54,18 @@
 
 
     </main>   
-     <section> 
+     <section id="leave"> 
        <h2>Leave a Message</h2>
        <form name="leave_message">
 
          <label for="name">Name</label><br>  
-         <input type="text" name="name" required=true><br>
+         <input type="text" name="name" required=true class='massage'><br>
 
          <label for="email">Email</label><br>
-         <input type="email" name="email" required=true><br>
+         <input type="email" name="email" required=true class='massage'><br>
 
          <label for="message">Message</label><br>
-         <textarea name="message" required=true></textarea><br>
+         <textarea name="message" required=true class='massage'></textarea><br>
 
          <button type="submit">Submit</button>
        </form>
@@ -68,13 +73,9 @@
       <section id="messages">
        <h2>Messages</h2>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
         </ul>
       </section>
     <footer>
-        <p><small>&copy; <span id="year">2021</span> by Svitlana Pankiv</small></p>
     </footer> 
     <script src="js/index.js"></script>    
   </body>

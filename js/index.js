@@ -2,23 +2,26 @@ const today = new Date();
 const thisYear = today.getFullYear();
 const footer = document.querySelector('footer');
 const copyright = document.createElement('p');
-const skills = ["Basic JavaScript", "HTML", "CSS", "Git", "GItHub", "VS Code", "GitHub Descktop"];
+const skills = ["JavaScript", "HTML", "CSS", "Git", "GitHub", "VS Code", "GitHub Descktop"];
 const skillsSection = document.getElementById('skills');
 const skillsList = skillsSection.querySelector('ul');
 
 for (let i = 0; i < skills.length; i++) {
     let skill = document.createElement('li');
     skill.innerHTML = skills[i];
-    skillslist.appendChild(skill);
+    skillsList.appendChild(skill);
 };
+console.log(skillsList);
 
 
-copyright.innerHTML = Svitlana Pankiv ${thisYear};
+copyright.innerHTML = `Svitlana Pankiv ${thisYear}`;
 copyright.className = "copyright";
 footer.appendChild(copyright);
 
-const messageForm = document.getElementsByName('leave_message') [0];
 
+
+
+const messageForm = document.getElementsByName('leave_message') [0];
 
 messageForm.addEventListener("submit",(event) => {
     event.preventDefault();
@@ -54,7 +57,7 @@ messageForm.addEventListener("submit",(event) => {
     messageList.appendChild(newMessage);
     newMessage.appendChild(removeButton);
 
-    mesageForm.reset();
+    messageForm.reset();
 
 });
 
