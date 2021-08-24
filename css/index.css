@@ -8,28 +8,43 @@ body {
 h2 {
     font-weight: bold;
     color: #01B6AD;
-    font-size: 175%;
+    font-size: .95em;
     font-weight: 250;
     line-height: 2.3;
+    text-transform: uppercase;
   }
 
   button {
     background-color: rgb(255, 255, 177);
     font-weight: 700;
   }
-
-  .top-skill  {
-    display: inline-block;
-    margin-right: 5px;
-    padding: 25px, 25px
+  
+  .top-skill li {
     background-color: #FFFFFF;
+    padding: 10px;
+    background: #0A4958;
     list-style-type: circle;
+    border-radius: 5px;
+    margin: 45px auto;
+    box-sizing: border-box;
   }
-  .hr li {
+  #skills li {  
+  color: rgb(0, 0, 0);
+	padding: 15px;
+	margin: 5px;	
+	background: #fff;
+  display: inline-block;
+  width: 10em
+	}
+
+
+
+  .main-nav li {
    display: inline;
-   margin-right: 5px;
+   margin-top: 5px;
    padding: 25px;
-  }
+   text-transform: uppercase;
+  } 
 
   .massage {
     border: 1px solid;
@@ -43,10 +58,23 @@ h2 {
       font-weight: 900;
       line-height: 2.3;
   }
-  footer{
+ /* footer{
       background-color: #0A4958;
       color: #FFFFFF;
-     
 
-  }
+  } */
+
+
 }
+
+@media (min-width: 769px) {
+ .main-header, 
+ .main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: row;
+ }
+
+}
+
