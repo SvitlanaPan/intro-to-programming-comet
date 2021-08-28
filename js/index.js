@@ -61,6 +61,32 @@ messageForm.addEventListener("submit",(event) => {
 
 });
 
+    const githubRequest = new XMLHttpRequest();
+    githubRequest.onreadystatechange = function () {
+        if(githubRequest.readyState === 4 && githubRequest.status === 200) { 
+      }
+    }
+
+    githubRequest.open('GET', 'https://api.github.com/users/SvitlanaPan/repos');
+    githubRequest.send();
+
+        githubRequest.addEventListener('load', function() {
+        console.log(this.response);
+        const repositories = JSON.parse(this.response);
+        console.log(repositories);
+        const projectSection = document.getElementById('projects');
+        const projectList = projectSection.getElementsByTagName('ul')[0];
+        for (let i = 0; i < repositories.length; i++) {
+            let project = document.createElement('li');
+            project.className = 'project';
+             
+            
+            projectList.appendChild(project);
+
+        }
+    }); 
+
+    
 
 
 
