@@ -69,24 +69,43 @@ messageForm.addEventListener("submit",(event) => {
 
     githubRequest.open('GET', 'https://api.github.com/users/SvitlanaPan/repos');
     githubRequest.send();
-
-        githubRequest.addEventListener('load', function() {
+    githubRequest.addEventListener('load', function() {
         console.log(this.response);
         const repositories = JSON.parse(this.response);
         console.log(repositories);
         const projectSection = document.getElementById('projects');
         const projectList = projectSection.getElementsByTagName('ul')[0];
         for (let i = 0; i < repositories.length; i++) {
-            let project = document.createElement('li');
-            project.className = 'project';
-             
-            
-            projectList.appendChild(project);
+           let project = document.createElement('li');
+            project.className = 'projects';
+            progectLink.textContent = repositories[i].name;
+            progectLink.href = repositories[i].html_url;
+
+            project.appendChild(progectLink);
+            projectList.appendChild(projects);
 
         }
     }); 
 
-    
+     /*fetch ('https://api.github.com/users/SvitlanaPan/repos', {
+         method: 'GET'
+     }).then(responce => responce.json())
+       .then (function()){
+        console.log(this.response);
+        const repositories = JSON.parse(this.response);
+        console.log(repositories);
+        const projectSection = document.getElementById('projects');
+        const projectList = projectSection.getElementsByTagName('ul')[0];
+        for (let i = 0; i < repositories.length; i++) {
+            project.className = 'projects';
+             
+            
+            projectList.appendChild(project);
+       }
+         */
+   
+
+
 
 
 
