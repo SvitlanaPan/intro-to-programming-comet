@@ -1,6 +1,19 @@
 
   @media screen and (min-width: 480px) {
 
+    .image {
+      width: 200px; 
+      height: 200px;
+      display: block;
+      align-items: center;
+    }
+    
+    .name {
+      text-align: left;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+
+    }
 body {
     background-color: #F6E7D2;
     padding: 50px;
